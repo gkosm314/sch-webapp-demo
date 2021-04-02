@@ -186,9 +186,3 @@ $( document ).ready(function() {
 //Search function uses .normalize() and regular expressions to remove accent marks from greek text.
 //https://stackoverflow.com/questions/23346506/javascript-normalize-accented-greek-characters/45797754#45797754
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize
-
-//Autocomplete implementation
-//Add global variable "title source"
-//Go to displayCardsGrade and displayCardsLesson, extract the titles of the displayed cards from the 'cards' object, and store them globally
-// or
-// call the autocomplete function (depends on the implementation of the autocomplete function)
