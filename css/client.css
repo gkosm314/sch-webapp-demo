@@ -105,6 +105,9 @@ html {
     cursor: pointer;
 }
 
+.grade-selection-ul li a::selection {
+    background: transparent;
+}
 
 /*Modal design*/
 .modal-app-teaching, .modal-app-description {
