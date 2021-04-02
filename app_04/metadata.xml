@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-03-22T19:17:00Z</responseDate><request metadataPrefix="oai_lom" verb="GetRecord" identifier="oai:photodentro:lor:8521/1630">http://photodentro.edu.gr/oai-lor/request</request><GetRecord><record><header><identifier>oai:photodentro:lor:8521/1630</identifier><datestamp>2021-02-15T21:32:03Z</datestamp><setSpec>hdl_123456789_255</setSpec></header><metadata><lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general><title><string language="el">Μελετώντας τη φαινόμενη ανύψωση</string></title><description><string language="el">Οπτικοποίηση της φαινόμενης ανύψωσης, λόγω διάθλασης.</string></description><language>el</language><keyword><string language="el">διάθλαση</string></keyword><keyword><string language="el">δείκτης διάθλασης</string></keyword><keyword><string language="el">φαινόμενη ανύψωση</string></keyword><identifier><catalog>URI</catalog><entry>photodentro:lor:8521/1630</entry></identifier><aggregationLevel><string language="*">1</string></aggregationLevel></general><lifeCycle><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ηλίας Σιτσανλής
+N:Ηλίας Σιτσανλής
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>creator</value></role><date><dateTime>2013-01-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ηλίας Σιτσανλής
+N:Ηλίας Σιτσανλής
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>technical implementer</value></role><date><dateTime>2013-01-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Τάσος Μικρόπουλος
+N:Τάσος Μικρόπουλος
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>educational validator</value></role><date><dateTime>2013-01-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Τάσος Μικρόπουλος
+N:Τάσος Μικρόπουλος
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>team coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Αλεξάνδρα Κυρτσώνη
+N:Αλεξάνδρα Κυρτσώνη
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>creator</value></role><date><dateTime>2020-04-06</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Αλεξάνδρα Κυρτσώνη
+N:Αλεξάνδρα Κυρτσώνη
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>technical implementer</value></role><date><dateTime>2020-04-06</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Αλεξάνδρα Κυρτσώνη
+N:Αλεξάνδρα Κυρτσώνη
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>adaptation</value></role><date><dateTime>2020-04-06</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>certifier</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>quality seal</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>item seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/r/8541/9486
+N:http://photodentro.edu.gr/seals/r/8541/9486
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>item sealing URL</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>item seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΥΠΑΙΘ
+N:ΥΠΑΙΘ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funder</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΥΠΑΙΘ
+N:ΥΠΑΙΘ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funder</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+N:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funding</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ελληνικό Δημόσιο
+N:Ελληνικό Δημόσιο
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funding</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+N:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funding framework</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΠΔΕ
+N:ΠΔΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funding framework</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>program / project</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ 2020
+N:ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ 2020
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>program / project</value></role></contribute><contribute><entity>2010-2015</entity><role><source>LOMv1.0</source><value>duration</value></role></contribute><contribute><entity>4/3/2020-31/12/2020</entity><role><source>LOMv1.0</source><value>duration</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:CTI
+N:CTI
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>main beneficiary / contractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:CTI
+N:CTI
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>main beneficiary / contractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+N:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>project / program partners</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:-
+N:-
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>project / program partners</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Υποέργο 11: «Συστήματα και e-υπηρεσίες για το Ψηφιακό Εκπαιδευτικό Περιεχόμενο της Πρωτοβάθμιας και Δευτεροβάθμιας Εκπαίδευσης: συντήρηση, ενημέρωση και υποστήριξη της λειτουργίας τους»
+N:Υποέργο 11: «Συστήματα και e-υπηρεσίες για το Ψηφιακό Εκπαιδευτικό Περιεχόμενο της Πρωτοβάθμιας και Δευτεροβάθμιας Εκπαίδευσης: συντήρηση, ενημέρωση και υποστήριξη της λειτουργίας τους»
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract leader / coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Δρ. Ελίνα Μεγάλου
+N:Δρ. Ελίνα Μεγάλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract leader / coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>supervising and monitoring authority</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>supervising and monitoring authority</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Φωτόδεντρο Μαθησιακά Αντικείμενα
+N:Φωτόδεντρο Μαθησιακά Αντικείμενα
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>provider</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>licensor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>publisher</value></role></contribute><version><string language="el">2.0</string></version></lifeCycle><metaMetadata><identifier><catalog>URI</catalog><entry>photodentro:lor:8521/1630</entry></identifier><contribute/><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βαγγέλης Κολτσάκης
+N:Βαγγέλης Κολτσάκης
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata author</value></role><date><dateTime>2013-02-17</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Τάσος Μικρόπουλος
+N:Τάσος Μικρόπουλος
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2013-03-05</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Τάσος Μικρόπουλος
+N:Τάσος Μικρόπουλος
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2013-11-07</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βαγγέλης Κολτσάκης
+N:Βαγγέλης Κολτσάκης
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata author</value></role><date><dateTime>2014-12-10</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Νικηφόρος Παπαχρήστος
+N:Νικηφόρος Παπαχρήστος
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2014-12-15</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Τζένη Οικονομίδου
+N:Τζένη Οικονομίδου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2018-05-15</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata licensor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata publisher</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Φωτόδεντρο Μαθησιακά Αντικείμενα
+N:Φωτόδεντρο Μαθησιακά Αντικείμενα
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata provider</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata certifier</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ-ΜΕΤΑΔΕΔΟΜΕΝΑ
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ-ΜΕΤΑΔΕΔΟΜΕΝΑ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata quality seal</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>meta seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/r/8541/9487
+N:http://photodentro.edu.gr/seals/r/8541/9487
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>meta sealing URL</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>meta seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΥΠΑΙΘ
+N:ΥΠΑΙΘ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funder</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΥΠΑΙΘ
+N:ΥΠΑΙΘ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funder</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+N:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funding</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ελληνικό Δημόσιο
+N:Ελληνικό Δημόσιο
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funding</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+N:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funding framework</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΠΔΕ
+N:ΠΔΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funding framework</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata authoring program / project</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ 2020
+N:ΤΕΧΝΙΚΟΣ ΣΥΜΒΟΥΛΟΣ 2020
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata authoring program / project</value></role></contribute><contribute><entity>2010-2015</entity><role><source>LOMv1.0</source><value>metadata authoring program / project duration</value></role></contribute><contribute><entity>4/3/2020-31/12/2020</entity><role><source>LOMv1.0</source><value>metadata authoring program / project duration</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:CTI
+N:CTI
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>main beneficiary / contractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:CTI
+N:CTI
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>main beneficiary / contractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+N:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>project / program partners</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:-
+N:-
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>project / program partners</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Υποέργο 11: «Συστήματα και e-υπηρεσίες για το Ψηφιακό Εκπαιδευτικό Περιεχόμενο της Πρωτοβάθμιας και Δευτεροβάθμιας Εκπαίδευσης: συντήρηση, ενημέρωση και υποστήριξη της λειτουργίας τους»
+N:Υποέργο 11: «Συστήματα και e-υπηρεσίες για το Ψηφιακό Εκπαιδευτικό Περιεχόμενο της Πρωτοβάθμιας και Δευτεροβάθμιας Εκπαίδευσης: συντήρηση, ενημέρωση και υποστήριξη της λειτουργίας τους»
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract leader / coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Δρ. Ελίνα Μεγάλου
+N:Δρ. Ελίνα Μεγάλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract leader / coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>supervising and monitoring authority</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>supervising and monitoring authority</value></role></contribute><metadataSchema>LOM-GRv1.0</metadataSchema><language>el</language></metaMetadata><technical><location>http://photodentro.edu.gr/lor/retrieve/65225/fish_v2.0_pidx0059985.zip</location><format>application/zip</format><size>2740138</size><requirement/></technical><educational><learningResourceType><source>LOMv1.0</source><value>visualisation</value></learningResourceType><context><source>LOMv1.0</source><value>lower secondary</value></context><context><source>LOMv1.0</source><value>higher secondary</value></context><context><source>LOMv1.0</source><value>vocational education</value></context><intendedEndUserRole><source>LOMv1.0</source><value>learner</value></intendedEndUserRole><intendedEndUserRole><source>LOMv1.0</source><value>teacher</value></intendedEndUserRole><description><string language="el">Δυνατότητα διερεύνησης του φαινομένου της φαινόμενης ανύψωσης. Ο χρήστης μελετά το φαινόμενο μεταβάλλοντας τη θέση του παρατηρητή, του ψαριού, το δείκτη διάθλασης του ενός ή και των δύο μέσων.</string></description><language>el</language><typicalAgeRange><string language="x-t-lre">12-18</string></typicalAgeRange></educational><rights><description><string language="el">Το παρόν Μαθησιακό Αντικείμενο χορηγείται με άδεια 'Creative Commons Attribution-NonCommercial-ShareAlikeGreece 4.0'. Δηλαδή, αυτό διατίθεται για ελεύθερη χρήση, αναπαραγωγή, αναδιανομή, παρουσίαση και αξιοποίηση, με την προϋπόθεση να μην υπάρχει πρόθεση εμπορικής εκμετάλλευσης. Απαιτείται αναφορά του δημιουργού ή του δικαιούχου της άδειας. Οποιοδήποτε παράγωγο έργο μπορεί να διανεμηθεί μόνο με την ίδια ή παρόμοια άδεια.::Οι δημιουργοί έχουν παραχωρήσει στο ΙΤΥΕ και το ΥΠΑΙΘ το δικαίωμα ελεύθερης χρήσης, αξιοποίησης και διάθεσης του υλικού με ηλεκτρονικά και έντυπα μέσα, στην Ελλάδα και στο Εξωτερικό και για απεριόριστο χρονικό διάστημα. Οι δημιουργοί εγγυώνται ότι το παρόν δεν προσβάλλει δικαιώματα τρίτων και δεν χρησιμοποιεί μελέτες ή προϊόντα τρίτων χωρίς νόμιμη άδεια αυτών.</string></description><copyrightAndOtherRestrictions><source>LOMv1.0</source><value>yes</value></copyrightAndOtherRestrictions><cost><source>LOMv1.0</source><value>no</value></cost></rights><classification><purpose><value>discipline</value></purpose><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>Physics::Optics::Refraction</id><entry><string language="en">Physics::Optics::Refraction</string></entry></taxon></taxonPath></classification><classification><purpose><value>discipline</value></purpose><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>Physics::Optics::Refractive index</id><entry><string language="en">Physics::Optics::Refractive index</string></entry></taxon></taxonPath></classification><classification><purpose><value>teaching/learning approach</value></purpose><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>cognitivist::inquiry learning</id><entry><string language="en">cognitivist::inquiry learning</string></entry></taxon></taxonPath></classification><relation><kind><source>LOMv1.0</source><value>isShownAt</value></kind><resource><identifier><catalog>URI</catalog><entry>http://photodentro.edu.gr/lor/r/8521/1630</entry></identifier></resource></relation><relation><kind><source>LOMv1.0</source><value>hasThumbnail</value></kind><resource><identifier><catalog>URI</catalog><entry>http://photodentro.edu.gr/lor/retrieve/65236/anypswsh.jpg.jpg</entry></identifier></resource></relation></lom></metadata><about><fileChanged>2020-09-21T08:45:31Z</fileChanged></about></record></GetRecord></OAI-PMH>
