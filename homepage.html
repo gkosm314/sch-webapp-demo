@@ -1,0 +1,930 @@
+<html lang="en">
+<head>
+    <title>sch-webapp</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="img/box.svg">
+    <link href="css/client.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/client.js" type="text/javascript"></script>
+</head>
+<body class="bg-body pb-5">
+<!--Blue header at the top        -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient py-3 align-middle">
+    <div class="container-fluid app_header">
+        <h2 class="app_header_title font-monospace text-light align-middle navbar-text">
+            <i class="bi-box align-middle" style="color: #fff3cd;"></i>|sch-webapp
+        </h2>
+    </div>
+</nav>
+
+<!-- Grade navigation    -->
+<div style="display: block;" class="container-fluid grade_navigation mt-2 pt-2">
+    <ul class="grade-selection-ul nav nav-pills nav-justified fw-bold g-5">
+        <li class="nav-item grade-selection-li">
+            <a class="nav-link" aria-current="page">Νηπιαγωγείο</a>
+        </li>
+        <li class="nav-item grade-selection-li">
+            <a class="nav-link">Δημοτικό</a>
+        </li>
+        <li class="nav-item grade-selection-li">
+            <a class="nav-link">Γυμνάσιο</a>
+        </li>
+        <li class="nav-item grade-selection-li">
+            <a class="nav-link">Λύκειο</a>
+        </li>
+    </ul>
+</div>
+
+<hr class="hr-menu-separator shadow-lg">
+
+<!-- Welcome Messages     -->
+<div class="container align-middle messages_content">
+    <div class="alert alert-primary text-center align-middle welcome-message">
+        Καλωσήρθες στο <b>sch-webapp</b>!<br>
+        Για να εξερευνήσεις τη συλλογή εκπαιδευτικών εφαρμογών, διάλεξε μια εκπαιδευτική βαθμίδα.
+    </div>
+    <div class="alert alert-secondary text-center align-middle text-muted note-message">
+        Σημείωση: κάποιες εφαρμογές χρησιμοποιούν την τεχνολογία Adobe Flash, η οποία δεν υποστηρίζεται πλέον από τους
+        περισσότερους φυλλομετρητές(browsers).
+        Για την εκτέλεση των εφαρμογών αυτών συνίσταται η πλοήγηση μέσω του δωρεάν φυλλομετρητή <a
+            href="https://www.palemoon.org/" class="alert-link" target="_blank">Palemoon</a>.
+    </div>
+</div>
+
+<!-- Applications collection  -->
+<div class="container-fluid main_content" style="display: none;">
+    <div class="row">
+        <!-- Categories list         -->
+        <div class="col-2 categories_column">
+            <div class="container-fluid categories-title">
+                <hr>
+                <div class="row mb-3 pb-1 categories_header">
+                    <h4 class="mt-2">
+                        Κατηγορίες
+                    </h4>
+                </div>
+            </div>
+            <div class="list-group categories-list"></div>
+        </div>
+
+        <!-- Applications               -->
+        <div class="col-10 applications_column">
+            <div class="container-fluid apps_gallery">
+                <hr>
+                <!-- Current navigation + search bar         -->
+                <div class="row mb-3 pb-1 apps_gallery_header">
+                    <div class="col-md-4">
+                        <h4 class="app_gallery_title mt-2">
+                                <span class="grade_name">
+                                    Οι εφαρμογές μου
+                                </span>
+                            <span class="lesson_name"></span>
+                            <!--Don't delete. This is a placeholder. It is filled by the jQuery script-->
+                        </h4>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5 text-end mt-1">
+                        <div class="input-group shadow-sm">
+                            <input type="text" class="form-control apps_search" id="app_search_input"
+                                   placeholder="Αναζήτησε τίτλο"
+                                   aria-label="search_text" aria-describedby="basic-search_icon">
+                            <button class="btn btn-outline-secondary" type="button" id="search_icon">
+                                <i class="bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No apps found alert message        -->
+                <div class="row alert alert-warning apps_alert text-center" role="alert">
+                    <i class="bi-exclamation-diamond-fill fs-5" style="color:inherit;"></i>
+                    <strong>
+                        Δε βρέθηκαν εφάρμογες που να ικανοποιούν τα κριτήρια σου. Δοκίμασε ξανά!
+                    </strong>
+                </div>
+
+                <!-- Applications boxes      -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 apps_view">
+                    <!-- g-2 is for spacing, row-cols-md-3 should be defined by python script  -->
+                    <!-- Attention: app_column is our snippet! -->
+                    <div class="col app_column mb-1">
+                        <div class="card shadow-sm bg-light h-100">
+                            <div class="card_img_overlay">
+                                <img src="applications/app_01/thumbnail.jpg" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body-title text-center mb-2">
+                                    <h6 class="card-title fw-bolder">
+                                        <a class="stretched-link" data-bs-toggle="modal" data-bs-target="#app_modal_1">
+                                            Θερμαίνοντας και ψύχοντας το νερό
+                                        </a>
+                                    </h6>
+                                </div>
+                                <hr>
+                                <span class="fw-bold">Λέξεις-κλειδιά:</span>
+                                <div class="card-text-keyword fs-5 bg-light">
+                                    <span class="badge  bg-primary p-2">τήξη</span>
+                                    <span class="badge  bg-primary p-2">πήξη</span>
+                                    <span class="badge  bg-primary p-2">θέρμανση</span>
+                                    <span class="badge  bg-primary p-2">ψήξη</span>
+                                    <span class="badge  bg-primary p-2">νερό</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_information d-none">
+                            <span class="card-info app_grade">Δημοτικό</span>
+                            <span class="card-info app_lesson">Φυσική</span>
+                            <span class="card-info app_id">1</span>
+                        </div>
+                    </div>
+
+                    <div class="col app_column mb-1">
+                        <div class="card shadow-sm bg-light h-100">
+                            <div class="card_img_overlay">
+                                <img src="applications/app_02/thumbnail.png" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body-title text-center mb-2">
+                                    <h6 class="card-title fw-bolder">
+                                        <a class="stretched-link" data-bs-toggle="modal" data-bs-target="#app_modal_2">
+                                            Εικονική περιήγηση στον Όλυμπο
+                                        </a>
+                                    </h6>
+                                </div>
+                                <hr>
+                                <span class="fw-bold">Λέξεις-κλειδιά:</span>
+                                <div class="card-text-keyword fs-5 bg-light">
+                                    <span class="badge  bg-primary p-2">Ελλάδα</span>
+                                    <span class="badge  bg-primary p-2">δορυφορική εικόνα</span>
+                                    <span class="badge  bg-primary p-2">βουνά</span>
+                                    <span class="badge  bg-primary p-2">Όλυμπος</span>
+                                    <span class="badge  bg-primary p-2">περιήγηση</span>
+                                </div>
+                            </div>
+                            <div class="card_information d-none">
+                                <span class="card-info app_grade">Δημοτικό</span>
+                                <span class="card-info app_lesson">Γεωγραφία</span>
+                                <span class="card-info app_id">2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col app_column mb-1">
+                        <div class="card shadow-sm bg-light h-100">
+                            <div class="card_img_overlay">
+                                <img src="applications/app_03/thumbnail.jpg" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body-title text-center mb-2">
+                                    <h6 class="card-title fw-bolder">
+                                        <a class="stretched-link" data-bs-toggle="modal" data-bs-target="#app_modal_3">
+                                            Ανακύκλωση τώρα!
+                                        </a>
+                                    </h6>
+                                </div>
+                                <hr>
+                                <span class="fw-bold">Λέξεις-κλειδιά:</span>
+                                <div class="card-text-keyword fs-5 bg-light">
+                                    <span class="badge  bg-primary p-2">ανακύκλωση</span>
+                                    <span class="badge  bg-primary p-2">περιβάλλον</span>
+                                    <span class="badge  bg-primary p-2">ανακυκλώσιμα υλικά</span>
+                                    <span class="badge  bg-primary p-2">χαρτί</span>
+                                    <span class="badge  bg-primary p-2">πλαστικό</span>
+                                    <span class="badge  bg-primary p-2">γυαλί</span>
+                                </div>
+                            </div>
+                            <div class="card_information d-none">
+                                <span class="card-info app_grade">Δημοτικό</span>
+                                <span class="card-info app_lesson">Γεωγραφία</span>
+                                <span class="card-info app_id">3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col app_column mb-1">
+                        <div class="card shadow-sm bg-light h-100">
+                            <div class="card_img_overlay">
+                                <img src="applications/app_04/thumbnail.jpg" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body-title text-center mb-2">
+                                    <h6 class="card-title fw-bolder">
+                                        <a class="stretched-link" data-bs-toggle="modal" data-bs-target="#app_modal_4">
+                                            Μελετώντας τη φαινόμενη ανύψωση
+                                        </a>
+                                    </h6>
+                                </div>
+                                <hr>
+                                <span class="fw-bold">Λέξεις-κλειδιά:</span>
+                                <div class="card-text-keyword fs-5 bg-light">
+                                    <span class="badge  bg-primary p-2">διάθλαση</span>
+                                    <span class="badge  bg-primary p-2">δείκτης διάθλασης</span>
+                                    <span class="badge  bg-primary p-2">φαινόμενη ανύψωση</span>
+                                </div>
+                            </div>
+                            <div class="card_information d-none">
+                                <span class="card-info app_grade">Γυμνάσιο</span>
+                                <span class="card-info app_grade">Λύκειο</span>
+                                <span class="card-info app_lesson">Φυσική</span>
+                                <span class="card-info app_id">4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col app_column mb-1">
+                        <div class="card shadow-sm bg-light h-100">
+                            <div class="card_img_overlay">
+                                <img src="applications/app_05/thumbnail.jpg" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body-title text-center mb-2">
+                                    <h6 class="card-title fw-bolder">
+                                        <a class="stretched-link" data-bs-toggle="modal" data-bs-target="#app_modal_5">
+                                            Η ιστορία του Αβραάμ (κόμικ)
+                                        </a>
+                                    </h6>
+                                </div>
+                                <hr>
+                                <span class="fw-bold">Λέξεις-κλειδιά:</span>
+                                <div class="card-text-keyword fs-5 bg-light">
+                                    <span class="badge  bg-primary p-2">Αβραάμ</span>
+                                    <span class="badge  bg-primary p-2">Σάρρα</span>
+                                    <span class="badge  bg-primary p-2">Ισαάκ</span>
+                                    <span class="badge  bg-primary p-2">πατριάρχες Ισραηλιτών</span>
+                                    <span class="badge  bg-primary p-2">Διαθήκη</span>
+                                    <span class="badge  bg-primary p-2">φιλοξενία Αβραάμ</span>
+                                    <span class="badge  bg-primary p-2">τρείς άγγελοι</span>
+                                    <span class="badge  bg-primary p-2">κόμικ</span>
+                                </div>
+                            </div>
+                            <div class="card_information d-none">
+                                <span class="card-info app_grade">Δημοτικό</span>
+                                <span class="card-info app_lesson">Θρησκευτικά</span>
+                                <span class="card-info app_id">5</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col app_column mb-1">
+                        <div class="card shadow-sm bg-light h-100">
+                            <div class="card_img_overlay">
+                                <img src="applications/app_06/thumbnail.jpg" class="card-img-top w-100" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-body-title text-center mb-2">
+                                    <h6 class="card-title fw-bolder">
+                                        <a class="stretched-link" data-bs-toggle="modal" data-bs-target="#app_modal_6">
+                                            Η εξίσωση συνx=α
+                                        </a>
+                                    </h6>
+                                </div>
+                                <hr>
+                                <span class="fw-bold">Λέξεις-κλειδιά:</span>
+                                <div class="card-text-keyword fs-5 bg-light">
+                                    <span class="badge  bg-primary p-2">εξίσωση</span>
+                                    <span class="badge  bg-primary p-2">συνx=α</span>
+                                    <span class="badge  bg-primary p-2">λύση εξίσωσης</span>
+                                    <span class="badge  bg-primary p-2">τριγωνομετρικός κύκλος</span>
+                                    <span class="badge  bg-primary p-2">γραφική παράσταση</span>
+                                    <span class="badge  bg-primary p-2">συνημίτονο</span>
+                                </div>
+                            </div>
+                            <div class="card_information d-none">
+                                <span class="card-info app_grade">Λύκειο</span>
+                                <span class="card-info app_lesson">Μαθηματικά</span>
+                                <span class="card-info app_id">6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal (popup with application details)            -->
+<div class="modal fade" id="app_modal_1" tabindex="-1" aria-labelledby="ModalLabel_1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_1">
+                    ΘΕΡΜΑΙΝΟΝΤΑΣ ΚΑΙ ΨΥΧΟΝΤΑΣ ΤΟ ΝΕΡΟ
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_01/thumbnail.jpg" class="modal-app-image img-thumbnail  mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Δυναμική οπτική αναπαράσταση στην οποία παρουσιάζεται η μετάβαση μιας ποσότητας
+                                    νερού, σε κλειστό δοχείο, μεταξύ των καταστάσεών του (υγρό, αέριο, στερεό), λόγω
+                                    θέρμανσης ή ψύξης. Στόχοι του μαθησιακού αντικειμένου είναι να διερευνήσουν οι
+                                    μαθητές τις επιμέρους αλλαγές της κατάστασης του νερού, να διακρίνουν τη θέρμανση
+                                    και την ψύξη ως παραμέτρους που καθορίζουν την αλλαγή της φυσικής του κατάστασης,
+                                    καθώς και να προβληματιστούν για το αν η διαδικασία αυτή είναι ανάλογη και για άλλα
+                                    υλικά.
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end mt-2">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_1" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_1">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_1">
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Το αντικείμενο αναπαριστά τις αλλαγές φάσης (καταστάσεις) του νερού,
+                                        συσχετίζοντάς τις άμεσα με τη θέρμανση και την ψύξη του. Η σχεδίαση του
+                                        αντικειμένου, με περιορισμό των παραμέτρων που υπεισέρχονται και άμεσο έλεγχό
+                                        τους από τους μαθητές, επιτρέπει τη χρήση του ως διερευνητικού εργαλείου για τη
+                                        μελέτη των μεταβολών μεταξύ των καταστάσεων του νερού. Η χρήση κλειστού δοχείου
+                                        για την παρακολούθηση των αλλαγών επιτρέπει την επέκταση στη μελέτη του κύκλου
+                                        του νερού.
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Το αντικείμενο αναπαριστά τις αλλαγές φάσης (καταστάσεις) του νερού,
+                                        συσχετίζοντάς τις άμεσα με τη θέρμανση και την ψύξη του. Η σχεδίαση του
+                                        αντικειμένου, με περιορισμό των παραμέτρων που υπεισέρχονται και άμεσο έλεγχό
+                                        τους από τους μαθητές, επιτρέπει τη χρήση του ως διερευνητικού εργαλείου για τη
+                                        μελέτη των μεταβολών μεταξύ των καταστάσεων του νερού. Η χρήση κλειστού δοχείου
+                                        για την παρακολούθηση των αλλαγών επιτρέπει την επέκταση στη μελέτη του κύκλου
+                                        του νερού.
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Το αντικείμενο αναπαριστά τις αλλαγές φάσης (καταστάσεις) του νερού,
+                                        συσχετίζοντάς τις άμεσα με τη θέρμανση και την ψύξη του. Η σχεδίαση του
+                                        αντικειμένου, με περιορισμό των παραμέτρων που υπεισέρχονται και άμεσο έλεγχό
+                                        τους από τους μαθητές, επιτρέπει τη χρήση του ως διερευνητικού εργαλείου για τη
+                                        μελέτη των μεταβολών μεταξύ των καταστάσεων του νερού. Η χρήση κλειστού δοχείου
+                                        για την παρακολούθηση των αλλαγών επιτρέπει την επέκταση στη μελέτη του κύκλου
+                                        του νερού.
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Το αντικείμενο αναπαριστά τις αλλαγές φάσης (καταστάσεις) του νερού,
+                                        συσχετίζοντάς τις άμεσα με τη θέρμανση και την ψύξη του. Η σχεδίαση του
+                                        αντικειμένου, με περιορισμό των παραμέτρων που υπεισέρχονται και άμεσο έλεγχό
+                                        τους από τους μαθητές, επιτρέπει τη χρήση του ως διερευνητικού εργαλείου για τη
+                                        μελέτη των μεταβολών μεταξύ των καταστάσεων του νερού. Η χρήση κλειστού δοχείου
+                                        για την παρακολούθηση των αλλαγών επιτρέπει την επέκταση στη μελέτη του κύκλου
+                                        του νερού.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <div class="card-text-keyword fs-5 bg-light">
+                                        <span class="badge  bg-primary p-2">τήξη</span>
+                                        <span class="badge  bg-primary p-2">πήξη</span>
+                                        <span class="badge  bg-primary p-2">θέρμανση</span>
+                                        <span class="badge  bg-primary p-2">ψήξη</span>
+                                        <span class="badge  bg-primary p-2">νερό</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_01/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="app_modal_2" tabindex="-1" aria-labelledby="ModalLabel_2" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_2">
+                    ΕΙΚΟΝΙΚΗ ΠΕΡΙΗΓΗΣΗ ΣΤΟΝ ΟΛΥΜΠΟ
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_02/thumbnail.png" class="modal-app-image img-thumbnail  mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Εικονική περιήγηση στον Όλυμπο, με τη βοήθεια τρισδιάστατων δορυφορικών εικόνων της
+                                    εφαρμογής Google Earth. Στόχος του μαθησιακού αντικειμένου είναι να προσφέρει στους
+                                    μαθητές μια πληρέστερη εικόνα για την περιοχή, παρουσιάζοντάς τη υπό άλλη οπτική.
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end mt-2">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_2" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_2">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_2">
+
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <div class="card-text-keyword fs-5 bg-light">
+                                        <span class="badge  bg-primary p-2">Ελλάδα</span>
+                                        <span class="badge  bg-primary p-2">δορυφορική εικόνα</span>
+                                        <span class="badge  bg-primary p-2">βουνά</span>
+                                        <span class="badge  bg-primary p-2">Όλυμπος</span>
+                                        <span class="badge  bg-primary p-2">περιήγηση</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_02/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="app_modal_3" tabindex="-1" aria-labelledby="ModalLabel_3" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_3">
+                    ΑΝΑΚΥΚΛΩΣΗ ΤΩΡΑ!
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_03/thumbnail.jpg" class="modal-app-image img-thumbnail  mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Άσκηση ταξινόμησης για τα ανακυκλώσιμα υλικά, με μορφή παιχνιδιού. Σκοπός της
+                                    άσκησης είναι ο σωστός διαχωρισμός των ανακυκλώσιμων συσκευασιών (γυαλί, χαρτί,
+                                    πλαστικό) και η τοποθέτηση κάθε αντικειμένου στον κατάλληλο κάδο.
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end mt-2">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_3" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_3">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_3">
+
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <div class="card-text-keyword fs-5 bg-light">
+                                        <span class="badge  bg-primary p-2">ανακύκλωση</span>
+                                        <span class="badge  bg-primary p-2">περιβάλλον</span>
+                                        <span class="badge  bg-primary p-2">ανακυκλώσιμα υλικά</span>
+                                        <span class="badge  bg-primary p-2">χαρτί</span>
+                                        <span class="badge  bg-primary p-2">πλαστικό</span>
+                                        <span class="badge  bg-primary p-2">γυαλί</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_03/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="app_modal_4" tabindex="-1" aria-labelledby="ModalLabel_4" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_4">
+                    ΜΕΛΕΤΩΝΤΑΣ ΤΗ ΦΑΙΝΟΜΕΝΗ ΑΝΥΨΩΣΗ
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_04/thumbnail.jpg" class="modal-app-image img-thumbnail  mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Μελετώντας τη φαινόμενη ανύψωση
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end mt-2">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_4" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_4">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_4">
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Δυνατότητα διερεύνησης του φαινομένου της φαινόμενης ανύψωσης. Ο χρήστης μελετά
+                                        το φαινόμενο μεταβάλλοντας τη θέση του παρατηρητή, του ψαριού, το δείκτη
+                                        διάθλασης του ενός ή και των δύο μέσων.
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Δυνατότητα διερεύνησης του φαινομένου της φαινόμενης ανύψωσης. Ο χρήστης μελετά
+                                        το φαινόμενο μεταβάλλοντας τη θέση του παρατηρητή, του ψαριού, το δείκτη
+                                        διάθλασης του ενός ή και των δύο μέσων.
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Δυνατότητα διερεύνησης του φαινομένου της φαινόμενης ανύψωσης. Ο χρήστης μελετά
+                                        το φαινόμενο μεταβάλλοντας τη θέση του παρατηρητή, του ψαριού, το δείκτη
+                                        διάθλασης του ενός ή και των δύο μέσων.
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Δυνατότητα διερεύνησης του φαινομένου της φαινόμενης ανύψωσης. Ο χρήστης μελετά
+                                        το φαινόμενο μεταβάλλοντας τη θέση του παρατηρητή, του ψαριού, το δείκτη
+                                        διάθλασης του ενός ή και των δύο μέσων.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <div class="card-text-keyword fs-5 bg-light">
+                                        <span class="badge  bg-primary p-2">διάθλαση</span>
+                                        <span class="badge  bg-primary p-2">δείκτης διάθλασης</span>
+                                        <span class="badge  bg-primary p-2">φαινόμενη ανύψωση</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_04/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="app_modal_5" tabindex="-1" aria-labelledby="ModalLabel_5" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_5">
+                    Η ιστορία του Αβραάμ (κόμικ)
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_05/thumbnail.jpg" class="modal-app-image img-thumbnail  mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Ψηφιακό βιβλίο κόμικ με θέμα την ιστορία του Αβραάμ. Στόχος του μαθησιακού
+                                    αντικειμένου είναι να γνωρίσουν καλύτερα οι μαθητές τη σχετική διήγηση της Παλαιάς
+                                    Διαθήκης αναφορικά με την κλήση του Αβραάμ από τον Θεό, τη σύναψη Διαθήκης, τη
+                                    φιλοξενία των τριών αγγέλων και τη γέννηση του Ισαάκ.
+                                    Το μαθησιακό αντικείμενο δίνει τη δυνατότητα στους μαθητές όχι μόνο να μελετήσουν
+                                    την ιστορία του Αβραάμ, αλλά και να την αποτυπώσουν ευκολότερα στη μνήμη τους,
+                                    εφόσον στο κόμικ συνδυάζεται το κείμενο με την εικόνα.
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end mt-2">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_5" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_5">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_5">
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Ο εκπαιδευτικός έχει τη δυνατότητα αξιοποίησης του μαθησιακού αντικειμένου σε
+                                        κάθε φάση της διδασκαλίας (παρουσίαση, επεξεργασία, ανακεφαλαίωση), παρέχοντας
+                                        επιπλέον πληροφορίες, ή σε επόμενο μάθημα, για τη σύνδεση με τα προηγούμενα. Το
+                                        μαθησιακό αντικείμενο μπορεί, επίσης, να χρησιμοποιηθεί ως παράδειγμα για
+                                        δραστηριότητα δημιουργικής γραφής, παρέχοντας στους μαθητές τη δυνατότητα να
+                                        ξαναγράψουν την ιστορία με βάση τις εικόνες, αλλά με δικούς τους διαλόγους.
+
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Ο εκπαιδευτικός έχει τη δυνατότητα αξιοποίησης του μαθησιακού αντικειμένου σε
+                                        κάθε φάση της διδασκαλίας (παρουσίαση, επεξεργασία, ανακεφαλαίωση), παρέχοντας
+                                        επιπλέον πληροφορίες, ή σε επόμενο μάθημα, για τη σύνδεση με τα προηγούμενα. Το
+                                        μαθησιακό αντικείμενο μπορεί, επίσης, να χρησιμοποιηθεί ως παράδειγμα για
+                                        δραστηριότητα δημιουργικής γραφής, παρέχοντας στους μαθητές τη δυνατότητα να
+                                        ξαναγράψουν την ιστορία με βάση τις εικόνες, αλλά με δικούς τους διαλόγους.
+
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Ο εκπαιδευτικός έχει τη δυνατότητα αξιοποίησης του μαθησιακού αντικειμένου σε
+                                        κάθε φάση της διδασκαλίας (παρουσίαση, επεξεργασία, ανακεφαλαίωση), παρέχοντας
+                                        επιπλέον πληροφορίες, ή σε επόμενο μάθημα, για τη σύνδεση με τα προηγούμενα. Το
+                                        μαθησιακό αντικείμενο μπορεί, επίσης, να χρησιμοποιηθεί ως παράδειγμα για
+                                        δραστηριότητα δημιουργικής γραφής, παρέχοντας στους μαθητές τη δυνατότητα να
+                                        ξαναγράψουν την ιστορία με βάση τις εικόνες, αλλά με δικούς τους διαλόγους.
+
+                                    </p>
+                                    <span class="modal-app-teaching-label modal-app-label fw-bold"> ΣΗΜΕΙΩΣΕΙΣ ΓΙΑ ΔΙΔΑΚΤΙΚΗ ΑΞΙΟΠΟΙΗΣΗ:</span>
+                                    <p class="modal-app-description">
+                                        Ο εκπαιδευτικός έχει τη δυνατότητα αξιοποίησης του μαθησιακού αντικειμένου σε
+                                        κάθε φάση της διδασκαλίας (παρουσίαση, επεξεργασία, ανακεφαλαίωση), παρέχοντας
+                                        επιπλέον πληροφορίες, ή σε επόμενο μάθημα, για τη σύνδεση με τα προηγούμενα. Το
+                                        μαθησιακό αντικείμενο μπορεί, επίσης, να χρησιμοποιηθεί ως παράδειγμα για
+                                        δραστηριότητα δημιουργικής γραφής, παρέχοντας στους μαθητές τη δυνατότητα να
+                                        ξαναγράψουν την ιστορία με βάση τις εικόνες, αλλά με δικούς τους διαλόγους.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <div class="card-text-keyword fs-5 bg-light">
+                                        <span class="badge  bg-primary p-2">Αβραάμ</span>
+                                        <span class="badge  bg-primary p-2">Σάρρα</span>
+                                        <span class="badge  bg-primary p-2">Ισαάκ</span>
+                                        <span class="badge  bg-primary p-2">πατριάρχες Ισραηλιτών</span>
+                                        <span class="badge  bg-primary p-2">Διαθήκη</span>
+                                        <span class="badge  bg-primary p-2">φιλοξενία Αβραάμ</span>
+                                        <span class="badge  bg-primary p-2">τρείς άγγελοι</span>
+                                        <span class="badge  bg-primary p-2">κόμικ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_05/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="app_modal_6" tabindex="-1" aria-labelledby="ModalLabel_6" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_6">
+                    Η εξίσωση συνx=α
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_06/thumbnail.jpg" class="modal-app-image position-fixed mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Μικροπείραμα για την ανακάλυψη των λύσεων της εξίσωσης συνx=α. Στους μαθητές δίνεται
+                                    η δυνατότητα να βρουν τις λύσεις μιας συγκεκριμένης εξίσωσης στον τριγωνομετρικό
+                                    κύκλο και, μέσω πολλαπλών, δυναμικά αλληλοσυνδεόμενων, γεωμετρικών και γραφικών
+                                    αναπαραστάσεων, να γενικεύσουν τις λύσεις αυτές σε όλο το R. Το μαθησιακό
+                                    αντικείμενο προσφέρεται, επίσης, προκειμένου οι μαθητές να δημιουργήσουν τις δικές
+                                    τους εξισώσεις και να τις επιλύσουν, επαληθεύοντας ταυτόχρονα τις λύσεις τους
+                                    γραφικά. Το μικροπείραμα έχει δημιουργηθεί με χρήση εργαλείων δυναμικής γεωμετρίας
+                                    και χειρισμού αλγεβρικών ψηφιακών συστημάτων (Geogebra).
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end mt-2">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_6" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_6">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_6">
+
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <div class="card-text-keyword fs-5 bg-light">
+                                        <span class="badge  bg-primary p-2">εξίσωση</span>
+                                        <span class="badge  bg-primary p-2">συνx=α</span>
+                                        <span class="badge  bg-primary p-2">λύση εξίσωσης</span>
+                                        <span class="badge  bg-primary p-2">τριγωνομετρικός κύκλος</span>
+                                        <span class="badge  bg-primary p-2">γραφική παράσταση</span>
+                                        <span class="badge  bg-primary p-2">συνημίτονο</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_06/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer links + back-to-top arrow    -->
+<footer class="container-fluid footer mt-3 bottom-0 position-absolute mt-4">
+    <div class="row text-end">
+        <div class="top-button fs-2 position-fixed">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </div>
+    <div class="row footer-div position-relative text-center w-100 bg-light">
+        <ul class="list-group list-group-horizontal bg-light bg-gradient justify-content-end">
+            <li class="list-group-item bg-light">
+                <a href="https://eellak.ellak.gr/" target="_blank" class="footer-link">GFOSS</a>
+            </li>
+            <li class="list-group-item bg-light">
+                <a href="http://photodentro.edu.gr/lor/" target="_blank" class="footer-link">Photodentro</a>
+            </li>
+            <li class="list-group-item bg-light">
+                <a href="https://dschool.edu.gr/dschool2-project/" target="_blank" class="footer-link">Ψηφιακό
+                    Σχολείο</a>
+            </li>
+            <li class="list-group-item bg-light">
+                <a href="https://publications.cti.gr/" target="_blank" class="footer-link">ΙΤΥΕ Διοφαντός</a>
+            </li><!---->
+        </ul>
+    </div>
+</footer>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

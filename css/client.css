@@ -1,0 +1,156 @@
+/*General styling*/
+hr {
+    display: none;
+}
+
+/*Sticky Footer (footer should always remain at the bottom*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    border-top-color: darkgray;
+    border-top-style: dotted;
+    border-top-width: thin;
+}
+
+/*Footer design*/
+.footer-link {
+    color: grey;
+    border: none;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #0d6efd;
+}
+
+.list-group-item {
+    border: none;
+}
+
+/*Back-to-top button design*/
+.card:hover{
+    cursor: pointer;
+}
+
+.top-button {
+    opacity: 0.5;
+    display: none;
+    bottom: 7%;
+}
+
+.top-button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+/*Thumbnail hover effect*/
+.card_img_overlay {
+    background-color: white;
+}
+
+.card-img-top {
+    height: 12vw;
+    object-fit: cover;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+    opacity: 0.9;
+}
+
+/*Card design*/
+.card-text-keyword {
+    line-height: 2.5vw;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-body-title {
+    border-bottom: thin solid aqua;
+}
+
+.card hr {
+    display: none;
+}
+
+.card-title a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+/*Header design*/
+.app_header_title {
+    letter-spacing: 0.3vw;
+}
+
+.app_header_title:hover {
+    cursor: pointer;
+}
+
+.app_header_title::selection {
+    background: transparent;
+}
+
+/*Navigation design*/
+.grade-selection-ul li a{
+    cursor: pointer;
+}
+
+
+/*Modal design*/
+.modal-app-teaching, .modal-app-description {
+    text-align: justify;
+}
+
+.modal-app-extra-info-link-button[aria-expanded="false"] > .more-info-button-collapse {
+    display: none;
+}
+
+.modal-app-extra-info-link-button[aria-expanded="true"] > .more-info-button-expand {
+    display: none;
+}
+
+/*Modal thumbnail => disappear if the screen is small*/
+@media (max-width: 1200px) {
+    .modal-body .col-lg-4:first-of-type {
+        display: none;
+    }
+}
+
+.modal-app-image{
+    max-width: 85%;
+    height: auto;
+}
+
+/*Gallery design*/
+.apps_gallery_header, .categories_header {
+    border-bottom-width: thin;
+    border-bottom-color: deepskyblue;
+    border-bottom-style: inset;
+}
+
+.hr-menu-separator {
+    display: block;
+    color: darkcyan;
+}
+
+.apps_gallery {
+    border-radius: 13px;
+}
+
+.form-control{
+    border-color: lightgray;
+}
+
+.apps_alert{
+    display: none;
+}
