@@ -1,0 +1,78 @@
+<div class="modal fade" id="app_modal_2" tabindex="-1" aria-labelledby="ModalLabel_2" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-6">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title fw-bolder" id="ModalLabel_2">
+                    ΕΙΚΟΝΙΚΗ ΠΕΡΙΗΓΗΣΗ ΣΤΟΝ ΟΛΥΜΠΟ
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col">
+                            <img src="applications/app_02/thumbnail.png" class="modal-app-image position-fixed mt-1"
+                                 alt="...">
+                        </div>
+                        <div class="col-lg-8 col-md-12 col">
+                            <div class="modal-app-basic-info">
+                                <!-- modal-app-label and modal-app-label-description etc... classes are NOT Bootstrap releated              -->
+                                <span class="modal-app-description-label modal-app-label fw-bold">ΠΕΡΙΓΡΑΦΗ:</span>
+                                <div class="modal-app-description">
+                                    Εικονική περιήγηση στον Όλυμπο, με τη βοήθεια τρισδιάστατων δορυφορικών εικόνων της
+                                    εφαρμογής Google Earth. Στόχος του μαθησιακού αντικειμένου είναι να προσφέρει στους
+                                    μαθητές μια πληρέστερη εικόνα για την περιοχή, παρουσιάζοντάς τη υπό άλλη οπτική.
+                                </div>
+                            </div>
+                            <div class="modal-app-extra-info">
+                                <div class="modal-app-extra-info-link text-end">
+                                    <button class="btn btn-secondary btn-sm modal-app-extra-info-link-button"
+                                            data-bs-toggle="collapse" href="#collapseExample_2" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample_2">
+                                            <span class="more-info-button-expand">
+                                                Περισσότερες πληροφορίες
+                                                <i class="bi-chevron-down" style="color:white;"></i>
+                                            </span>
+                                        <span class="more-info-button-collapse">
+                                                Λιγότερες πληροφορίες
+                                                <i class="bi-chevron-up" style="color:white;"></i>
+                                            </span>
+                                    </button>
+                                </div>
+                                <p></p>
+                                <div class="modal-app-extra-info-body collapse" id="collapseExample_2">
+
+                                </div>
+                            </div>
+                            <div class="modal-app-keywords">
+                                <span class="modal-app-description-label modal-app-label fw-bold">keywords:</span>
+                                <div class="modal-app-keywords-list fs-4">
+                                    <span class="badge  bg-primary p-2">Ελλάδα</span>
+                                    <span class="badge  bg-primary p-2">δορυφορική εικόνα</span>
+                                    <span class="badge  bg-primary p-2">βουνά</span>
+                                    <span class="badge  bg-primary p-2">Όλυμπος</span>
+                                    <span class="badge  bg-primary p-2">περιήγηση</span>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-light">
+                <div class="card-body-button text-center">
+                    <!-- run-button class is NOT Bootstrap releated              -->
+                    <!-- make sure availHeight/availWidth are the best properties and maybe move the onclick to client.js     -->
+                    <a href="applications/app_02/index.html"
+                       class="run-button btn btn-primary btn-lg fs-5 fw-bold"
+                       target="popup"
+                       onclick="window.open(this.href,'targetWindow','toolbar=no,location=no,status=no,menubar=no,resizable=yes,width=window.screen.availWidth*0.9,height=window.screen.availHeight*0.9'); return false;">
+                        Πήγαινε στην εφαρμογή!
+                        <i class="bi-play-fill" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
