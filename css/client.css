@@ -127,6 +127,7 @@ html {
 }
 
 .modal-app-image{
+    width: 85%;
     max-width: 85%;
     height: auto;
 }
