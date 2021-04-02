@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd"><responseDate>2021-03-22T19:17:47Z</responseDate><request metadataPrefix="oai_lom" verb="GetRecord" identifier="oai:photodentro:lor:8521/1545">http://photodentro.edu.gr/oai-lor/request</request><GetRecord><record><header><identifier>oai:photodentro:lor:8521/1545</identifier><datestamp>2021-02-15T17:21:56Z</datestamp><setSpec>hdl_8521_10447</setSpec></header><metadata><lom xmlns="http://ltsc.ieee.org/xsd/LOM"><general><title><string language="el">Η ιστορία του Αβραάμ (κόμικ)</string></title><description><string language="el">Ψηφιακό βιβλίο κόμικ με θέμα την ιστορία του Αβραάμ. Στόχος του μαθησιακού αντικειμένου είναι να γνωρίσουν καλύτερα οι μαθητές τη σχετική διήγηση της Παλαιάς Διαθήκης αναφορικά με την κλήση του Αβραάμ από τον Θεό, τη σύναψη Διαθήκης, τη φιλοξενία των τριών αγγέλων και τη γέννηση του Ισαάκ.
+Το μαθησιακό αντικείμενο δίνει τη δυνατότητα στους μαθητές όχι μόνο να μελετήσουν την ιστορία του Αβραάμ, αλλά και να την αποτυπώσουν ευκολότερα στη μνήμη τους, εφόσον στο κόμικ συνδυάζεται το κείμενο με την εικόνα.</string></description><language>el</language><keyword><string language="el">Αβραάμ</string></keyword><keyword><string language="el">Σάρρα</string></keyword><keyword><string language="el">Ισαάκ</string></keyword><keyword><string language="el">πατριάρχες Ισραηλιτών</string></keyword><keyword><string language="el">Διαθήκη</string></keyword><keyword><string language="el">φιλοξενία Αβραάμ</string></keyword><keyword><string language="el">τρεις άγγελοι</string></keyword><keyword><string language="el">κόμικ</string></keyword><coverage><string language="el">Μεσοποταμία, Χαναάν</string></coverage><coverage><string language="el">εποχή Παλαιάς Διαθήκης</string></coverage><identifier><catalog>URI</catalog><entry>photodentro:lor:8521/1545</entry></identifier><aggregationLevel><string language="*">1</string></aggregationLevel></general><lifeCycle><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Γιώργος Παπανικολάου
+N:Γιώργος Παπανικολάου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>creator</value></role><date><dateTime>2011-03-19</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Νίκος Αργυρόπουλος
+N:Νίκος Αργυρόπουλος
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>validator</value></role><date><dateTime>2014-08-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ιωάννα Κομνηνού
+N:Ιωάννα Κομνηνού
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>validator</value></role><date><dateTime>2014-08-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βασιλική Μητροπούλου
+N:Βασιλική Μητροπούλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>pedagogical coordinator</value></role><date><dateTime>2014-08-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βασιλική Μητροπούλου
+N:Βασιλική Μητροπούλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>educational validator</value></role><date><dateTime>2014-08-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βασιλική Μητροπούλου
+N:Βασιλική Μητροπούλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>team coordinator</value></role><date><dateTime>2014-08-31</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>certifier</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>quality seal</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>item seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/r/8541/17679
+N:http://photodentro.edu.gr/seals/r/8541/17679
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>item sealing URL</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98513/ds-cti.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>item seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΥΠΑΙΘ
+N:ΥΠΑΙΘ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funder</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+N:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funding</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+N:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>funding framework</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>program / project</value></role></contribute><contribute><entity>2010-2015</entity><role><source>LOMv1.0</source><value>duration</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:CTI
+N:CTI
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>main beneficiary / contractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+N:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>project / program partners</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract leader / coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>supervising and monitoring authority</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Φωτόδεντρο Μαθησιακά Αντικείμενα
+N:Φωτόδεντρο Μαθησιακά Αντικείμενα
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>provider</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>licensor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>publisher</value></role></contribute><status><source>LOMv1.0</source><value>final</value></status><version><string language="*">1.0</string></version></lifeCycle><metaMetadata><identifier><catalog>URI</catalog><entry>photodentro:lor:8521/1545</entry></identifier><contribute/><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Γιώργος Παπανικολάου
+N:Γιώργος Παπανικολάου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata author</value></role><date><dateTime>2012-09-28</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Γιώργος Παπανικολάου
+N:Γιώργος Παπανικολάου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2013-03-02</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ιωάννα Κομνηνού
+N:Ιωάννα Κομνηνού
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata author</value></role><date><dateTime>2014-06-28</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ιωάννα Κομνηνού
+N:Ιωάννα Κομνηνού
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2014-06-28</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βασιλική Μητροπούλου
+N:Βασιλική Μητροπούλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2014-06-28</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Βασιλική Μητροπούλου
+N:Βασιλική Μητροπούλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2014-10-06</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Τζένη Οικονομίδου
+N:Τζένη Οικονομίδου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata validator</value></role><date><dateTime>2018-06-15</dateTime></date></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata licensor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata publisher</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Φωτόδεντρο Μαθησιακά Αντικείμενα
+N:Φωτόδεντρο Μαθησιακά Αντικείμενα
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata provider</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata certifier</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ-ΜΕΤΑΔΕΔΟΜΕΝΑ
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ-ΜΕΤΑΔΕΔΟΜΕΝΑ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata quality seal</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>meta seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/r/8541/17680
+N:http://photodentro.edu.gr/seals/r/8541/17680
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>meta sealing URL</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+N:http://photodentro.edu.gr/seals/retrieve/98471/ds-cti-metadata.png_teaser.jpg
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>meta seal teaser</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΥΠΑΙΘ
+N:ΥΠΑΙΘ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funder</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+N:Ε.Ε. (ΕΚΤ) και Ελληνικό Δημόσιο
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funding</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+N:ΕΠ ΕΔΒΜ, ΕΣΠΑ 2007-2013
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata funding framework</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+N:ΨΗΦΙΑΚΟ ΣΧΟΛΕΙΟ (Π61-ΙΤΥΕ)
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>metadata authoring program / project</value></role></contribute><contribute><entity>2010-2015</entity><role><source>LOMv1.0</source><value>metadata authoring program / project duration</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:CTI
+N:CTI
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>main beneficiary / contractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+N:Καθ. Χρήστος Κακλαμάνης, Δρ. Ελίνα Μεγάλου
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:ΙΤΥΕ
+N:ΙΤΥΕ
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>project / program partners</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>action coordinator / leader</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontractor</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>subcontract leader / coordinator</value></role></contribute><contribute><entity><![CDATA[BEGIN:VCARD 
+FN:
+N:
+VERSION:3.0 
+END:VCARD 
+]]></entity><role><source>LOMv1.0</source><value>supervising and monitoring authority</value></role></contribute><metadataSchema>LOM-GRv1.0</metadataSchema><language>el</language></metaMetadata><technical><location>http://photodentro.edu.gr/lor/retrieve/6147/kef1_en5_comic_history_abram.zip</location><format>application/zip</format><size>23696288</size><requirement><orComposite><name><source>LOMv1.0</source><value>Adobe Flash Player</value></name><type><source>LOMv1.0</source><value>plug-in</value></type><maximumVersion>none</maximumVersion><minimumVersion>none</minimumVersion></orComposite></requirement></technical><educational><learningResourceType><source>LOMv1.0</source><value>presentation</value></learningResourceType><typicalLearningTime><duration>PT00H10M00S</duration></typicalLearningTime><context><source>LOMv1.0</source><value>primary</value></context><intendedEndUserRole><source>LOMv1.0</source><value>learner</value></intendedEndUserRole><intendedEndUserRole><source>LOMv1.0</source><value>teacher</value></intendedEndUserRole><interactivityType><source>LOMv1.0</source><value>expositive</value></interactivityType><description><string language="el">Ο εκπαιδευτικός έχει τη δυνατότητα αξιοποίησης του μαθησιακού αντικειμένου σε κάθε φάση της διδασκαλίας (παρουσίαση, επεξεργασία, ανακεφαλαίωση), παρέχοντας επιπλέον πληροφορίες, ή σε επόμενο μάθημα, για τη σύνδεση με τα προηγούμενα. Το μαθησιακό αντικείμενο μπορεί, επίσης, να χρησιμοποιηθεί ως παράδειγμα για δραστηριότητα δημιουργικής γραφής, παρέχοντας στους μαθητές τη δυνατότητα να ξαναγράψουν την ιστορία με βάση τις εικόνες, αλλά με δικούς τους διαλόγους.</string></description><language>el</language><typicalAgeRange><string language="x-t-lre">9-12</string></typicalAgeRange></educational><rights><description><string language="el">Το παρόν Μαθησιακό Αντικείμενο χορηγείται με άδεια 'Creative Commons Attribution-NonCommercial-ShareAlike Greece 3.0'. Δηλαδή, αυτό διατίθεται για ελεύθερη χρήση, αναπαραγωγή, αναδιανομή, παρουσίαση και αξιοποίηση, με την προϋπόθεση να μην υπάρχει πρόθεση εμπορικής εκμετάλλευσης. Απαιτείται αναφορά του δημιουργού ή του δικαιούχου της άδειας. Οποιοδήποτε παράγωγο έργο μπορεί να διανεμηθεί μόνο με την ίδια ή παρόμοια άδεια.::Οι δημιουργοί έχουν παραχωρήσει στο ΙΤΥΕ και στο ΥΠΑΙΘ το δικαίωμα ελεύθερης χρήσης, αξιοποίησης και διάθεσης του υλικού με ηλεκτρονικά και έντυπα μέσα, στην Ελλάδα και στο εξωτερικό και για απεριόριστο χρονικό διάστημα. Οι δημιουργοί εγγυώνται ότι το παρόν δεν προσβάλλει δικαιώματα τρίτων και δεν χρησιμοποιεί μελέτες ή προϊόντα τρίτων χωρίς νόμιμη άδεια αυτών.</string></description><copyrightAndOtherRestrictions><source>LOMv1.0</source><value>yes</value></copyrightAndOtherRestrictions><cost><source>LOMv1.0</source><value>no</value></cost></rights><classification><purpose><value>discipline</value></purpose><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>Religious Education::Old Testament::Patriarchs</id><entry><string language="en">Religious Education::Old Testament::Patriarchs</string></entry></taxon></taxonPath><keyword><string language="el">Αβραάμ, Αγία Τριάδα</string></keyword></classification><classification><purpose><value>educational objective</value></purpose><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>cognitive::knowledge::factual</id><entry><string language="en">cognitive::knowledge::factual</string></entry></taxon></taxonPath><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>cognitive::process::to remember</id><entry><string language="en">cognitive::process::to remember</string></entry></taxon></taxonPath></classification><classification><purpose><value>teaching/learning approach</value></purpose><taxonPath><source><string language="en">Photodentro Taxonomy</string></source><taxon><id>cognitivist::direct instruction</id><entry><string language="en">cognitivist::direct instruction</string></entry></taxon></taxonPath></classification><relation><kind><source>LOMv1.0</source><value>isShownAt</value></kind><resource><identifier><catalog>URI</catalog><entry>http://photodentro.edu.gr/lor/r/8521/1545</entry></identifier></resource></relation><relation><kind><source>LOMv1.0</source><value>hasThumbnail</value></kind><resource><identifier><catalog>URI</catalog><entry>http://photodentro.edu.gr/lor/retrieve/25656/kef1_en5_comic_history_abram.JPG.jpg</entry></identifier></resource></relation></lom></metadata><about><fileChanged>2015-01-01T00:00:00Z</fileChanged></about></record></GetRecord></OAI-PMH>

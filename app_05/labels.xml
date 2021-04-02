@@ -1,0 +1,10 @@
+﻿<ComicLabViewer>
+
+<Label name="labelPage">Σελίδα</Label>
+<Label name="labelOf">από</Label>
+<Label name="labelThumbnails">Μικρογραφίες</Label>
+<Label name="labelLoading">Φόρτωση</Label>
+<Label name="openFile">Άνοιγμα Αρχείου</Label>
+<Label name="openButton">Άνοιγμα</Label>
+
+</ComicLabViewer>
